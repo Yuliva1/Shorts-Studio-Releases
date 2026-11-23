@@ -1,0 +1,24 @@
+Shorts Studio — üçüncü taraf bileşenler
+=======================================
+
+Bu paket aşağıdaki açık kaynak bileşenleri içerir ya da ilk kullanımda indirir.
+Her biri kendi lisansıyla dağıtılır; lisans metinleri ilgili projelerde bulunur.
+
+FFmpeg (bin\ffmpeg.exe, bin\ffprobe.exe)
+  Lisans: GNU GPL v3 (--enable-gpl --enable-version3 derlemesi, libx264 dahil)
+  Derleme: BtbN/FFmpeg-Builds (https://github.com/BtbN/FFmpeg-Builds)
+  Kaynak kod: https://ffmpeg.org/download.html ve https://github.com/BtbN/FFmpeg-Builds
+  FFmpeg ayrı bir program olarak çağrılır; Shorts Studio'ya bağlanmaz (link edilmez).
+
+Python (runtime\)            PSF License — https://www.python.org/
+faster-whisper, CTranslate2  MIT — https://github.com/SYSTRAN/faster-whisper
+Whisper large-v3 modeli      MIT — OpenAI; ilk kullanımda Hugging Face'ten indirilir (Systran/faster-whisper-large-v3)
+YAMNet (ONNX)                Apache 2.0 — Google; ilk kullanımda indirilir
+ONNX Runtime                 MIT — https://github.com/microsoft/onnxruntime
+OpenCV                       Apache 2.0 — https://opencv.org/
+NumPy, SciPy                 BSD — https://numpy.org/ , https://scipy.org/
+FastAPI, Starlette, Uvicorn  MIT / BSD
+yt-dlp                       Unlicense — https://github.com/yt-dlp/yt-dlp
+pywebview                    BSD — https://github.com/r0x0r/pywebview
+NVIDIA cuBLAS / cuDNN        NVIDIA lisansı; yalnızca kullanıcı isterse PyPI'den indirilir (Ayarlar > GPU hızlandırma)
+Ollama (isteğe bağlı)        MIT — pakette yok; kullanıcı ayrıca kurar
